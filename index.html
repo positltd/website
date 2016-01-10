@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Posit Ltd</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <style>
+        html{font-size:10px}/* Set early to avoid flash of browser default rems */
+        html,body{height:100%;width:100%;margin:0;padding:0;}
+        *{box-sizing:border-box;transition:all .5s;}
+
+        body {
+            font-family: 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .logo-wrapper {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        @media (orientation: landscape) {
+            .logo-wrapper {
+                height: 100vh;
+                width: 100vh;
+            }
+        }
+        @media (orientation: portrait) {
+            .logo-wrapper {
+                width: 100vw;
+                height: 100vw;
+            }
+        }
+            .logo,
+            .negative-logo-bg {
+                position: absolute;
+                top: 0;
+            }
+            .logo {
+                width: 100%;
+                height: 100%;
+            }
+            .negative-logo-bg {
+                height: 100%;
+                width: auto;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <video class="negative-logo-bg" autoplay="true" loop="true">
+                <!--<source src="media/negative-logo-bg-compressed.ogg" type="video/ogg" />-->
+                <source src="media/negative-logo-bg-compressed.mp4" type="video/mp4" />
+            </video>
+            <img class="logo" alt="Posit" src="media/posit-logomark-wordmark-negative-white.svg" />
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+
+    </script>
+</body>
+</html>
